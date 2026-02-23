@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ice Cream Date 🍦💖</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 300% 300%;
+    animation: gradientBG 8s ease infinite;
+    color: white;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 520px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4e50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1c1c;
+    transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🍦 Ice Cream Date Proposal 🍦</h1>
+    <p>
+        Sona, tell me… when are we finally going to have ice cream together? 💖<br><br>
+        When I go out with you, I’ll take care of everything.  
+        From picking you up to dropping you home safely — I’ll handle it all.  
+        You won’t have to face any problem.  
+        You can trust me — your comfort and safety are my responsibility. ❤️
+    </p>
+
+    <button onclick="playMusic()">Tap Here 💕</button>
+</div>
+
+<audio id="bgMusic" src="icecream.mp3" loop></audio>
+
+<script>
+function playMusic() {
+    var music = document.getElementById("bgMusic");
+    music.play();
+}
+</script>
+
+</body>
+</html>
